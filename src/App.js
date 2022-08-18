@@ -12,11 +12,11 @@ function App() {
 
   const [mySearch, setMySearch] = useState('');
   const [myOptions, setMyOptions] = useState([]);
-  const [wordSubmitted, setWordSubmitted] = useState('strawberries');
+  const [wordSubmitted, setWordSubmitted] = useState('mint');
 
   useEffect(() => {
     async function fetchData() {
-    const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=${MY_ID}&app_key=${MY_KEY}`);
+    const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${wordSubmitted}&app_id=${MY_ID}&app_key=${MY_KEY}`);
     const data = await response.json();
     setMyOptions(data.hits);
     console.log(data.hits);
@@ -60,6 +60,10 @@ function App() {
     {myOptions.map((element, index) => (
       <MyOptionsComponent key={index}
       label={element.recipe.label}
+      cuisineType={element.recipe.cuisineType}
+      CAquantity={element.recipe.totalNutrients.CA.quantity}
+      CHOLEquantity={element.recipe.totalNutrients.CHOLE.quantity}
+      totalNutrients={element.recipe.totalNutrients}
       image={element.recipe.image}
       ingredientLines={element.recipe.ingredientLines}
       calories={element.recipe.calories}  />

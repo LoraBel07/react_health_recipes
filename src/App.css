@@ -16,6 +16,9 @@ video {
   justify-content: center;
   padding: 1%;
 }
+.type {
+  margin-top: -7%;
+}
 .one {
   justify-content: space-evenly;  
 }
