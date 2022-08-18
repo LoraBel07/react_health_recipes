@@ -1,8 +1,7 @@
 .App {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(66, 63, 63, 0.5);
   text-align: center;
 }
-
 video {
   object-fit: cover;
   width: 100vw;
@@ -18,17 +17,71 @@ video {
   padding: 1%;
 }
 .one {
-  /* width: 80%; */
   justify-content: space-evenly;  
 }
 input {
   width: 400px;
   height: 30px;
-  background-color: rgba(240, 236, 233, 0.369);
-}
-h1 {
-  color: white;
 }
 .icons {
   width: 20px;
+}
+.icons2 {
+  width: 25px;
+  padding: 1%;
+  margin-right: 10px;
+  background-color: rgba(240, 248, 255, 0);
+}
+button {
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+}
+.main {
+  background-color: rgba(244, 246, 248, 0.755);
+  width: 35px;
+  height: 35px;
+}
+.tasty {
+  width: 250px;
+}
+.search {
+  width: 400px;
+  height: 30px;
+  background-color: rgba(245, 245, 237, 0.369);
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+  margin-left: 0px;
+}
+h1,h2,h3,h4,h5,ul,p {
+  font-family: 'Satisfy', cursive;
+  color: white;
+} 
+h3 {
+  font-size: 28px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+h4 {
+  font-size: 32px;
+  margin-top: -1%;
+  border-top: 1px solid rgba(255, 255, 255, 0.857);
+}
+h1 {
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: block;
+  font-size: 25px;  
 }
