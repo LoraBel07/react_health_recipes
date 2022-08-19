@@ -40,7 +40,9 @@ function App() {
         <video autoPlay muted loop >
           <source src={video} type="video/mp4"/>
         </video>
-        <h1>Diet</h1>
+        
+        <h1>Find your healthy food</h1>
+
       </div>
       <div className='box one'>
         <button className='main'>
@@ -63,7 +65,12 @@ function App() {
       cuisineType={element.recipe.cuisineType}
       CAquantity={element.recipe.totalNutrients.CA.quantity}
       CHOLEquantity={element.recipe.totalNutrients.CHOLE.quantity}
-      totalNutrients={element.recipe.totalNutrients}
+      FATquantity={element.recipe.totalNutrients.FAT.quantity}
+      NAquantity={element.recipe.totalNutrients.NA.quantity}
+      SUGARquantity={element.recipe.totalNutrients.SUGAR.quantity}
+      VITCquantity={element.recipe.totalNutrients.VITC.quantity}
+      VITDquantity={element.recipe.totalNutrients.VITD.quantity}
+      ZNquantity={element.recipe.totalNutrients.ZN.quantity}      
       image={element.recipe.image}
       ingredientLines={element.recipe.ingredientLines}
       calories={element.recipe.calories}  />

@@ -1,5 +1,5 @@
 .App {
-  background-color: rgba(66, 63, 63, 0.5);
+  background-color: rgba(10, 9, 9, 0.654);
   text-align: center;
 }
 video {
@@ -16,8 +16,12 @@ video {
   justify-content: center;
   padding: 1%;
 }
+.imgbox {
+  display: flex;
+  justify-content: start;
+}
 .type {
-  margin-top: -7%;
+  margin-top: -5%;
 }
 .one {
   justify-content: space-evenly;  
@@ -45,7 +49,7 @@ button {
   height: 35px;
 }
 .tasty {
-  width: 250px;
+  width: 300px;
 }
 .search {
   width: 400px;
@@ -57,7 +61,7 @@ button {
   margin-left: 0px;
 }
 h1,h2,h3,h4,h5,ul,p {
-  font-family: 'Satisfy', cursive;
+  font-family: 'Chivo', sans-serif;
   color: white;
 } 
 h3 {
@@ -68,6 +72,7 @@ h3 {
 }
 h4 {
   font-size: 32px;
+  width: 400px;
   margin-top: -1%;
   border-top: 1px solid rgba(255, 255, 255, 0.857);
 }
@@ -78,13 +83,32 @@ h1 {
 .list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  line-height: 60px;
 }
 ul {
   list-style: none;
   padding: 0;
 }
 li {
-  display: block;
+  /* display: block; */
   font-size: 25px;  
+}
+.description {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-wrap: wrap;
+}
+.paragraf {
+  font-size: 18px;
+  
+}
+.smallbox {
+  display: flex;
+  align-items: flex-start;  
+  line-height: -5%;
+  font-weight: 500;
+  font-size: 25px;
 }
