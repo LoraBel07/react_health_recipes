@@ -14,7 +14,10 @@ body{
   box-shadow: 0 7px 10px rgba(75, 74, 74, 0.5);
   text-align: center;
   width: 600px;
-  margin: 2% auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .box {
@@ -143,4 +146,48 @@ li {
 .edamam:hover{
   -webkit-filter: drop-shadow(5px 5px 5px #52abad);
   filter: drop-shadow(5px 5px 5px #52abad);
+}
+
+@media all and (max-width: 410px) {
+  .App{
+    width: 390px;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .search {
+    width: 300px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3, li {
+    font-size: 20px;
+  }   
+}
+@media all and (max-width: 280px) {
+  .App{
+    width: 105%;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3, li {
+    font-size: 18px;
+  } 
+  .search {
+    width: 260px;
+  }   
+  
+  .foodpicture {
+    width: 200px;
+    height: 200px;
+  }
 }
