@@ -1,9 +1,6 @@
 
 import './App.css';
 import { useEffect, useState } from "react";
-// import video from './food2.mp4';
-// import image from './play.png';
-// import image2 from './reset.png';
 import edamam from './badge.png'
 import MyOptionsComponent from './MyOptions';
 
@@ -20,14 +17,14 @@ function App() {
     const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${wordSubmitted}&app_id=${MY_ID}&app_key=${MY_KEY}`);
     const data = await response.json();
     setMyOptions(data.hits);
-    console.log(data.hits);
+    // console.log(data.hits);
   }
   fetchData();
   }, [wordSubmitted]);
 
   const myOptionSearch = (e) => {
     setMySearch(e.target.value);
-    console.log(e.target.value);
+    // console.log(e.target.value);
   }
 
   const finalSearch = (e) => {
@@ -38,22 +35,15 @@ function App() {
   return (
     <div className='App'>
       <div className='box'>
-        
-          <h1>Find your healthy food</h1>
-          
-        
+        <h1>Find your healthy food</h1>
       </div>
       
-
       <div className='box'>       
         <form onSubmit={finalSearch}>
-        
           <input className='search' placeholder='Search . . .' onChange={myOptionSearch} value={mySearch}>
           </input>
-          
         </form>        
       </div>
-
       
     {myOptions.map((element, index) => (
       <MyOptionsComponent key={index}
@@ -72,17 +62,11 @@ function App() {
       calories={element.recipe.calories}  />
     ))}
 
-
-
-
-
-  <div>
-  <a  href='https://www.edamam.com/' target="_blank" rel="noreferrer">
-          
-          <img className='edamam' src={ edamam } alt="logo" />
-          
+      <div>
+          <a  href='https://www.edamam.com/' target="_blank" rel="noreferrer">
+          <img className='edamam' src={ edamam } alt="logo" />          
         </a>
-  </div>
+      </div>
 
     </div>
   );
