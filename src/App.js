@@ -1,9 +1,10 @@
 
 import './App.css';
 import { useEffect, useState } from "react";
-import video from './food2.mp4';
-import image from './play.png';
-import image2 from './reset.png';
+// import video from './food2.mp4';
+// import image from './play.png';
+// import image2 from './reset.png';
+import edamam from './badge.png'
 import MyOptionsComponent from './MyOptions';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
   const [mySearch, setMySearch] = useState('');
   const [myOptions, setMyOptions] = useState([]);
-  const [wordSubmitted, setWordSubmitted] = useState('mint');
+  const [wordSubmitted, setWordSubmitted] = useState('mango');
 
   useEffect(() => {
     async function fetchData() {
@@ -37,25 +38,20 @@ function App() {
   return (
     <div className='App'>
       <div className='box'>
-        <video autoPlay muted loop >
-          <source src={video} type="video/mp4"/>
-        </video>
         
-        <h1>Find your healthy food</h1>
-
+          <h1>Find your healthy food</h1>
+          
+        
       </div>
-      <div className='box one'>
-        <button className='main'>
-          <img src={image2} className='icons' alt="reset"/>
-        </button>
+      
+
+      <div className='box'>       
         <form onSubmit={finalSearch}>
+        
           <input className='search' placeholder='Search . . .' onChange={myOptionSearch} value={mySearch}>
           </input>
-        </form>
-        <button className='main'>
-          <img src={image} className='icons' alt="start"/>
-        </button>
-        
+          
+        </form>        
       </div>
 
       
@@ -80,7 +76,13 @@ function App() {
 
 
 
-
+  <div>
+  <a  href='https://www.edamam.com/' target="_blank" rel="noreferrer">
+          
+          <img className='edamam' src={ edamam } alt="logo" />
+          
+        </a>
+  </div>
 
     </div>
   );
