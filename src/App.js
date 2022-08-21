@@ -1,4 +1,3 @@
-
 import './App.css';
 import { useEffect, useState } from "react";
 import edamam from './badge.png'
@@ -62,10 +61,12 @@ function App() {
       calories={element.recipe.calories}  />
     ))}
 
-      <div>
+      <div className='lastpart'>
+          <p>Larisa Beletsky ©</p>
           <a  href='https://www.edamam.com/' target="_blank" rel="noreferrer">
           <img className='edamam' src={ edamam } alt="logo" />          
         </a>
+        <p> 2022 </p>
       </div>
 
     </div>
