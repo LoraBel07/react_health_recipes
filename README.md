@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# diet_health_recipes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was create in React.JS with useState(), useEffect(), Axios, Edamam API.
+
+![recipes1](https://user-images.githubusercontent.com/91973134/186171765-aed14436-d82d-4483-9acc-746051fd893b.jpg)
+
+With it, you can find any recipe with Calories and the list of main nutrients... Take a look in your refrigerator: the application will find dishes for any available products!
+
+![recipes2](https://user-images.githubusercontent.com/91973134/186171853-994d507f-2df5-4067-a9a6-d320d81439b0.jpg)
+
+![recipes3](https://user-images.githubusercontent.com/91973134/186171974-e427e1fd-3ed6-47e9-94c2-95d25d0d3cc9.jpg)
+
+No one will be hungry and Bon Appetit!
+
 
 ## Available Scripts
 
