@@ -4,7 +4,7 @@ This project was create in React.JS with useState(), useEffect(), Axios, Edamam 
 
 ![recipes1](https://user-images.githubusercontent.com/91973134/186171765-aed14436-d82d-4483-9acc-746051fd893b.jpg)
 
-With it, you can find any Recipe with the List of main nutrients and Calories... Take a look in your refrigerator: the application will find dishes for any available products!
+This App can help to find any Recipe with the List of main nutrients and Calories... Take a look in your refrigerator: the application will find dishes for any available products!
 
 ![recipes2](https://user-images.githubusercontent.com/91973134/186171853-994d507f-2df5-4067-a9a6-d320d81439b0.jpg)
 
