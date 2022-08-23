@@ -1,6 +1,6 @@
 # diet_health_recipes
 
-This project was create in React.JS with useState(), useEffect(), Axios, Edamam API.
+This project was create in React.JS with useState(), useEffect(), Axios, Map(), Edamam API.
 
 ![recipes1](https://user-images.githubusercontent.com/91973134/186171765-aed14436-d82d-4483-9acc-746051fd893b.jpg)
 
