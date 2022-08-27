@@ -1,4 +1,4 @@
-# diet_health_recipes
+# react_health_recipes
 
 This project was create in React.JS with useState(), useEffect(), Axios, Map(), Edamam API.
 
